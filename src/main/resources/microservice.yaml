@@ -2,6 +2,7 @@ APPLICATION_ID: acmeair
 service_description:
   name: OrderService
   version: 0.0.7
+  environment: development
 cse:
   service:
     registry:
@@ -22,7 +23,3 @@ cse:
     chain:
       Provider:
         default: bizkeeper-provider,perf-stats,tracing-provider,sla-provider,qps-flowcontrol-provider
-  credentials:
-    accessKey: ak
-    secretKey: sk
-    akskCustomCipher: default
